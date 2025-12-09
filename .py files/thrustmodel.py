@@ -69,7 +69,7 @@ def dosim(init_Tank_Temp,
     thrust_array = []
     time_array = []
     change_in_Temp_array = []
-    vapor_correction_factor = 2.718
+    vapor_correction_factor = 1
     g = 9.80665      # m/s^2
     eps = exit_area/throat_area #change to variable maybe eventually
 
@@ -402,3 +402,4 @@ def dosim(init_Tank_Temp,
     eCEA.cleanup_files()
 
     return simtc
+
